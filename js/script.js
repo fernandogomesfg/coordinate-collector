@@ -2,8 +2,9 @@
 var map = L.map('map').setView([-25.948667945244654,32.59836673736573], 17);
 
 // Adiciona o layer de mapa
-L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-	maxZoom: 18,
+L.tileLayer('http://{s}.google.com/vt/lyrs=s,h&x={x}&y={y}&z={z}', {
+	maxZoom: 30,
+	subdomains: ['mt0', 'mt1', 'mt2', 'mt3']
 }).addTo(map);
 
 // Adiciona um controle de escala
